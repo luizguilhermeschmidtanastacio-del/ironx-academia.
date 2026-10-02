@@ -1,0 +1,937 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(11, 11, 11, 0.95);
+
+    border-bottom: 1px solid #222;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #ff6b00;
+}
+
+.navbar {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff6b00;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+    font-size: 28px;
+}
+
+
+/* =========================================
+   HOME
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 120px 8% 70px;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(255, 107, 0, 0.15),
+            transparent 40%
+        );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #ff6b00;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(70px, 9vw, 125px);
+
+    line-height: 0.85;
+
+    letter-spacing: 3px;
+}
+
+.hero h1 span {
+    color: #ff6b00;
+}
+
+.hero p {
+    margin-top: 30px;
+
+    max-width: 550px;
+
+    color: #cfcfcf;
+
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #ff6b00;
+    color: white;
+
+    border: 2px solid #ff6b00;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #ff6b00;
+
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+
+    border-color: #555;
+}
+
+.btn-outline:hover {
+    border-color: #ff6b00;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 430px;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #333,
+            #111
+        );
+
+    border: 2px solid #ff6b00;
+
+    box-shadow: 20px 20px 0 #ff6b00;
+
+    color: #aaa;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.section {
+    padding: 110px 8%;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    color: #ff6b00;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-top: 10px;
+}
+
+.section-title h2 span {
+    color: #ff6b00;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.about {
+    background: #111;
+}
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image .image-placeholder {
+    width: 100%;
+    height: 430px;
+
+    box-shadow: -15px 15px 0 #ff6b00;
+}
+
+.about-text h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    color: #bbb;
+
+    margin-bottom: 20px;
+}
+
+.values {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+.values strong {
+    color: #ff6b00;
+
+    font-size: 20px;
+}
+
+.values p {
+    color: #aaa;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    padding: 35px 25px;
+
+    background: #161616;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff6b00;
+}
+
+.icon {
+    color: #ff6b00;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SERVIÇOS
+========================================= */
+
+.services {
+    background: #111;
+}
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff6b00;
+}
+
+.service-image {
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #333,
+            #101010
+        );
+
+    color: #ff6b00;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 30px;
+
+    letter-spacing: 2px;
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-content h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    color: #999;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #ff6b00;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PLANOS
+========================================= */
+
+.plans {
+    background: #0b0b0b;
+}
+
+.plans-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+.plan {
+    position: relative;
+
+    padding: 40px 30px;
+
+    background: #161616;
+
+    border: 1px solid #292929;
+
+    text-align: center;
+}
+
+.plan h3 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
+}
+
+.price {
+    margin: 25px 0;
+
+    font-size: 45px;
+
+    font-weight: 700;
+}
+
+.price small {
+    font-size: 18px;
+}
+
+.price span {
+    font-size: 14px;
+
+    color: #888;
+}
+
+.plan ul {
+    list-style: none;
+
+    text-align: left;
+
+    margin: 25px 0;
+}
+
+.plan li {
+    padding: 8px 0;
+
+    color: #bbb;
+
+    border-bottom: 1px solid #292929;
+}
+
+.plan button {
+    width: 100%;
+
+    padding: 13px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #ff6b00;
+
+    transition: 0.3s;
+}
+
+.plan button:hover {
+    background: #ff6b00;
+}
+
+.featured {
+    border: 2px solid #ff6b00;
+
+    transform: scale(1.04);
+}
+
+.popular {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 6px 15px;
+
+    background: #ff6b00;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ESTATÍSTICAS
+========================================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    padding: 70px 8%;
+
+    background: #ff6b00;
+
+    color: #0b0b0b;
+
+    text-align: center;
+}
+
+.stats div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.stats strong {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 60px;
+
+    line-height: 1;
+}
+
+.stats span {
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contact {
+    background: #111;
+}
+
+.contact-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+}
+
+.contact-info h3 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #999;
+
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+.contact-item strong {
+    color: #ff6b00;
+}
+
+.contact-item span {
+    color: #bbb;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 16px;
+
+    background: #191919;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff6b00;
+}
+
+textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+form .btn {
+    width: 100%;
+
+    border: none;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 50px 8%;
+
+    text-align: center;
+
+    background: #080808;
+
+    border-top: 1px solid #222;
+}
+
+.footer-logo {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 45px;
+
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: #999;
+
+    margin: 5px 0 20px;
+}
+
+.social {
+    color: #ff6b00;
+
+    margin-bottom: 25px;
+}
+
+footer small {
+    color: #555;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    z-index: 2000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 45px;
+
+    background: #181818;
+
+    border: 1px solid #ff6b00;
+
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #ff6b00;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 40px;
+}
+
+.modal-content p {
+    color: #bbb;
+
+    margin: 20px 0 30px;
+}
+
+.close {
+    position: absolute;
+
+    top: 10px;
+    right: 18px;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .cards,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 50px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 25px;
+
+        background: #111;
+
+        border-bottom: 1px solid #333;
+
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero-image .image-placeholder {
+        width: 90%;
+        height: 380px;
+    }
+
+    .section {
+        padding: 80px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 48px;
+    }
+
+    .cards,
+    .services-grid,
+    .plans-grid,
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        transform: none;
+    }
+
+    .stats {
+        gap: 40px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
